@@ -19,4 +19,8 @@ body {
 }
 
 .paintContainer div {
+	flex-shrink: 0;
+	flex-grow: 0;
+	height: 25%;
+	width: 25%;
 }
