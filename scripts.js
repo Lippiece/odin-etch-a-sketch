@@ -26,3 +26,10 @@ function displayBlocks() {
 	}
 }
 displayBlocks();
+
+clearBtn.addEventListener("click", function (e) {
+	for (let i = 0; i < blocksNumber; i++) {
+		paintBlocks[i].style.backgroundColor = "white";
+	}
+});
+
