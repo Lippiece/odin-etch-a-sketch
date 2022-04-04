@@ -6,6 +6,6 @@ let paintBlocks = [];
 
 for (let i = 0; i < 16; i++) {
 	let temp = document.createElement("div");
-	divs.push(temp);
-	container.appendChild(divs[i]);
+	paintBlocks.push(temp);
+	paintContainer.appendChild(paintBlocks[i]);
 }
