@@ -9,16 +9,20 @@ let changeBtn = btns[1];
 let paintBlocks = [];
 let blocksNumber = 16;
 
-for (let i = 0; i < 16; i++) {
-	let temp = document.createElement("div");
-	paintBlocks.push(temp);
-	paintContainer.appendChild(paintBlocks[i]);
-	paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
-		Math.random() * 255
-	)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
-	paintBlocks[i].addEventListener("mouseenter", function (e) {
+function displayBlocks() {
+	/* FIXME: Blocks are already created! Delete them or something. */
+	for (let i = 0; i < blocksNumber; i++) {
+		let temp = document.createElement("div");
+		paintBlocks.push(temp);
+		paintContainer.appendChild(paintBlocks[i]);
 		paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
 			Math.random() * 255
 		)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
-	});
+		paintBlocks[i].addEventListener("mouseenter", function (e) {
+			paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
+				Math.random() * 255
+			)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+		});
+	}
 }
+displayBlocks();
