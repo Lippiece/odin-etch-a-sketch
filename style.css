@@ -8,12 +8,15 @@ body {
 	height: 100vh;
 }
 
-.container {
+.paintContainer {
 	margin: 0;
 	display: flex;
 	/* justify-content: center; */
 	/* align-items: center; */
-	width: 500px;
-	height: 500px;
+	width: 350px;
+	height: 350px;
 	flex-wrap: wrap;
+}
+
+.paintContainer div {
 }
