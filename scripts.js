@@ -8,4 +8,7 @@ for (let i = 0; i < 16; i++) {
 	let temp = document.createElement("div");
 	paintBlocks.push(temp);
 	paintContainer.appendChild(paintBlocks[i]);
+	paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
+		Math.random() * 255
+	)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
 }
