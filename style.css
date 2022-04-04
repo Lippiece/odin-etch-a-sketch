@@ -25,6 +25,11 @@ body {
 	width: 25%;
 }
 
+.btnContainer {
+	display: flex;
+	flex-direction: column;
+}
+
 button {
 	border-radius: 0;
 }
