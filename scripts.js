@@ -2,6 +2,10 @@ let divs = document.querySelectorAll("div");
 let paintContainer = divs[0];
 let btnContainer = divs[1];
 
+let btns = document.querySelectorAll("button");
+let clearBtn = btns[0];
+let changeBtn = btns[1];
+
 let paintBlocks = [];
 
 for (let i = 0; i < 16; i++) {
