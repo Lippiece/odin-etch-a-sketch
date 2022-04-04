@@ -7,6 +7,7 @@ let clearBtn = btns[0];
 let changeBtn = btns[1];
 
 let paintBlocks = [];
+let blocksNumber = 16;
 
 for (let i = 0; i < 16; i++) {
 	let temp = document.createElement("div");
