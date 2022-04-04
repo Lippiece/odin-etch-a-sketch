@@ -11,4 +11,9 @@ for (let i = 0; i < 16; i++) {
 	paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
 		Math.random() * 255
 	)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+	paintBlocks[i].addEventListener("mouseenter", function (e) {
+		paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
+			Math.random() * 255
+		)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+	});
 }
