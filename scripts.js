@@ -11,7 +11,12 @@ let blocksNumber = 16 * 16;
 
 
 function displayBlocks() {
-	/* FIXME: Blocks are already created! Delete them or something. */
+	toRemove = document.querySelectorAll("div");
+	for (let i = 1; i < toRemove.length - 2; i++) {
+		const element = toRemove[i];
+		element.remove();
+	}
+
 	for (let i = 0; i < blocksNumber; i++) {
 		let temp = document.createElement("div");
 		paintBlocks.push(temp);
