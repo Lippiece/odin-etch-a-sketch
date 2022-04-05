@@ -21,6 +21,10 @@ function displayBlocks() {
 		let temp = document.createElement("div");
 		paintBlocks.push(temp);
 		paintContainer.appendChild(paintBlocks[i]);
+
+		paintBlocks[i].style.width = `${100 / Math.sqrt(blocksNumber)}%`;
+		paintBlocks[i].style.height = `${100 / Math.sqrt(blocksNumber)}%`;
+
 		paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
 			Math.random() * 255
 		)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
