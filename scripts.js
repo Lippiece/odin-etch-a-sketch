@@ -43,3 +43,9 @@ clearBtn.addEventListener("click", function (e) {
 	}
 });
 
+changeBtn.addEventListener("click", function (e) {
+	blocksNumber = parseInt(prompt("How many blocks on one side?", 32));
+	blocksNumber *= blocksNumber;
+	displayBlocks();
+});
+
