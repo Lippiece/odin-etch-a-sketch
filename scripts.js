@@ -7,7 +7,8 @@ let clearBtn = btns[0];
 let changeBtn = btns[1];
 
 let paintBlocks = [];
-let blocksNumber = 16;
+let blocksNumber = 16 * 16;
+
 
 function displayBlocks() {
 	/* FIXME: Blocks are already created! Delete them or something. */
