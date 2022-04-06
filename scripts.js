@@ -5,6 +5,8 @@ let btnContainer = divs[1];
 let btns = document.querySelectorAll("button");
 let clearBtn = btns[0];
 let changeBtn = btns[1];
+let colorBtn = btns[2];
+let rainbowBtn = btns[3];
 
 let paintBlocks = [];
 let blocksNumber = 16 * 16;
