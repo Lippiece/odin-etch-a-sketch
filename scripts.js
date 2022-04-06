@@ -36,8 +36,16 @@ function displayBlocks() {
 		)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
 
 		/* Color stage */
-				Math.random() * 255
-			)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
+		paintBlocks[i].addEventListener("mouseover", function (e) {
+			if (doRandom) {
+				paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
+					Math.random() * 255
+				)},${Math.floor(Math.random() * 255)},${Math.floor(
+					Math.random() * 255
+				)})`;
+			} else {
+				paintBlocks[i].style.backgroundColor = `${color}`;
+			}
 		});
 	}
 }
