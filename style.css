@@ -3,7 +3,8 @@ body {
 	background-color: black;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 10vh;
 	align-items: center;
 	height: 100vh;
 }
