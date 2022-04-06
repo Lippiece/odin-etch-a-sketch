@@ -36,7 +36,7 @@ function displayBlocks() {
 		)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
 
 		/* Color stage */
-		paintBlocks[i].addEventListener("mouseover", function (e) {
+		paintBlocks[i].addEventListener("mouseover", function (_e) {
 			if (doRandom) {
 				paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
 					Math.random() * 255
@@ -51,20 +51,23 @@ function displayBlocks() {
 }
 displayBlocks();
 
-clearBtn.addEventListener("click", function (e) {
+clearBtn.addEventListener("click", function (_e) {
 	for (let i = 0; i < blocksNumber; i++) {
 		paintBlocks[i].style.backgroundColor = "white";
 	}
 });
 
-changeBtn.addEventListener("click", function (e) {
+changeBtn.addEventListener("click", function (_e) {
 	blocksNumber = parseInt(prompt("How many blocks on one side?", 32));
 	blocksNumber *= blocksNumber;
 	displayBlocks();
 });
 
-colorBtn.addEventListener("click", function (e) {
+colorBtn.addEventListener("click", function (_e) {
 	doRandom = false;
 	color = prompt("What color do you want?", "Red");
 });
 
+rainbowBtn.addEventListener("click", function (_e) {
+	doRandom = true;
+});
