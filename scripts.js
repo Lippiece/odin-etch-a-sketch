@@ -21,18 +21,21 @@ function displayBlocks() {
 	}
 
 	for (let i = 0; i < blocksNumber; i++) {
+		/* Placement stage */
 		let temp = document.createElement("div");
 		paintBlocks.push(temp);
 		paintContainer.appendChild(paintBlocks[i]);
 
+		/* Properties stage */
 		paintBlocks[i].style.width = `${100 / Math.sqrt(blocksNumber)}%`;
 		paintBlocks[i].style.height = `${100 / Math.sqrt(blocksNumber)}%`;
 
+		/* Initial color stage */
 		paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
 			Math.random() * 255
 		)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
-		paintBlocks[i].addEventListener("mouseenter", function (e) {
-			paintBlocks[i].style.backgroundColor = `rgb(${Math.floor(
+
+		/* Color stage */
 				Math.random() * 255
 			)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}`;
 		});
