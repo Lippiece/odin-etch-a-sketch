@@ -12,6 +12,7 @@ let paintBlocks = [];
 let blocksNumber = 16 * 16;
 
 let color;
+doRandom = true;
 function displayBlocks() {
 	toRemove = document.querySelectorAll("div");
 	for (let i = 1; i < toRemove.length - 2; i++) {
