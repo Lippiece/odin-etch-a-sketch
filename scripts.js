@@ -63,3 +63,8 @@ changeBtn.addEventListener("click", function (e) {
 	displayBlocks();
 });
 
+colorBtn.addEventListener("click", function (e) {
+	doRandom = false;
+	color = prompt("What color do you want?", "Red");
+});
+
