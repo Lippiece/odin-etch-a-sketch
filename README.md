@@ -3,3 +3,5 @@
 - Set the paint color
 - Clear the board
 - Toggle the rainbow mode
+
+Preview: https://lippiece.github.io/odin-etch-a-sketch/
